@@ -5,8 +5,9 @@ let shuttleCabinReady = true;
 let crewStatus = spaceSuitsOn && shuttleCabinReady;
 let computerStatusCode = 200;
 let shuttleSpeed = 15000;
-let fuelLevel = 18000;
+let fuelLevel = 19000;
 let engineTemperature = 2500;
+let commandOverride = true;
 
 
 //Monitor shuttle's fuel status
@@ -25,6 +26,11 @@ if (fuelLevel < 1000 || engineTemperature > 3500 || engineIndicatorLight === "re
    console.log("Fuel and engine status pending...");
 }
 
+if (fuelLevel > 20000 && engineIndicatorLight === "NOT red blinking" ||commandOverride === true) {
+   console.log("Cleared to launch!");
+} else {
+   console.log("Launch scrubbed!")
+}
 
 // BEFORE running the code, predict what will be printed to the console by the following statements:
 /*
