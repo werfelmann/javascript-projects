@@ -54,14 +54,14 @@ if (astronautCheck && astronautStatus === "ready" && massOk && fuelTempOk && fue
 
 if (preparedForLiftOff = true) {
     console.log("All systems are go. Initialize space sequence.");
-    console.log("Date:" date);
-    console.log("Time: " time);
-    console.log("Astronaut Count: " astronautCount);
-    console.log("Crew Mass: " crewMassKg);
-    console.log("Fuel Mass: " fuelMassKg);
-    console.log("Shuttle Mass: " shuttleMassKg);
-    console.log("Total Mass: " totalMassKg);
-    console.log("Fuel Temp: " fuelTempCelsius);
-    console.log("Weather Status: " weatherStatus);
+    console.log("Date: " + date);
+    console.log("Time: " + time);
+    console.log("Astronaut Count: " + astronautCount);
+    console.log("Crew Mass: " + crewMassKg);
+    console.log("Fuel Mass: " + fuelMassKg);
+    console.log("Shuttle Mass: " + shuttleMassKg);
+    console.log("Total Mass: " + totalMassKg);
+    console.log("Fuel Temp: " + fuelTempCelsius);
+    console.log("Weather Status: " + weatherStatus);
     console.log("Have a safe trip, astronauts.")
 }
