@@ -8,8 +8,15 @@ strings = [protoArray1, protoArray2, protoArray3, protoArray4];
 //2) 
 function reverseCommas() {
 	//TODO: 1. create and instantiate your variables.
-	let check;
-	let output;
+	let check
+	// console.log(check);
+	let output = protoArray1.split(",").reverse().join(",");
+
+/* Use the reverseCommas() function to code the following. 
+If the string uses commas to separate the words, split it into an array, reverse the entries, 
+and then join the array into a new comma-separated string. For example, "up,to,code,fun" becomes "fun,code */
+
+
 	//TODO: 2. write the code required for this step
 
 	//NOTE: For the code to run properly, you must return your output.  this needs to be the final line of code within the function's { }.
