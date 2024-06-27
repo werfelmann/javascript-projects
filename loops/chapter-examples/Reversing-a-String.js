@@ -1,8 +1,8 @@
 let str = "blue";
-let reversed = "";
+let reversed = ""; //accumulator variable, initialized as an empty string
 
 for (let i = 0; i < str.length; i++) {
-    reversed = str[i] + reversed;
+    reversed = reversed + str[i];
 }
 
 console.log(reversed);

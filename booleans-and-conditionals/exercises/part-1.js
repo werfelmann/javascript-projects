@@ -7,7 +7,7 @@ let computerStatusCode = 200;
 let shuttleSpeed = 15000;
 let fuelLevel = 19000;
 let engineTemperature = 2500;
-let commandOverride = true;
+let commandOverride = false;
 
 
 //Monitor shuttle's fuel status
