@@ -7,4 +7,3 @@ function printMessage() {
 printMessage();
 message = "Goodbye";
 printMessage();
-
