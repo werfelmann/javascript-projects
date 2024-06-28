@@ -75,4 +75,4 @@ function makeDiamond(height, charType = "#") {
     return diamondUpperHalf + '\n' + diamondLowerHalf;
 }
 
-console.log(makeDiamond(10, "+"));
+console.log(makeDiamond(10));
