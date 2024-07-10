@@ -1,4 +1,9 @@
-//1) Create a function with an array of numbers as its parameter. The function should iterate through the array and return the minimum value from the array. Hint: Use what you know about if statements to identify and store the smallest value within the array.
+/*1) Create a function with an array of numbers as its parameter. 
+The function should iterate through the array and return the minimum value from the array. 
+Hint: Use what you know about if statements to identify and store the smallest value within the array.
+*/
+
+
 
 //Sample arrays for testing:
 let nums1 = [5, 10, 2, 42];
