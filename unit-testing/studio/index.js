@@ -11,6 +11,8 @@ let launchcode = {
             return 'Code!';
         } else if (num === 5) {
             return 'Rocks!';
+        } else if (num % 2 === 0 && num % 3 === 0 && num % 5 === 0) {
+            return 'LaunchCode Rocks!';
         } else if (num % 2 === 0 && num % 3 === 0) {
             return 'LaunchCode!';
         } else if (num % 3 === 0 && num % 5 === 0) {

@@ -49,7 +49,12 @@ describe("Testing launchcode", function(){
     expect(result).toBe('Launch Rocks! (CRASH!!!!)');
   });
 
-  test("When passed a number that is N?OT divisible by 2, 3, or 5, return 'Rutabagas! That doesn't work.", function() {
+  test("When passed a number that is divisible by 2, 3, AND 5, return 'LaunchCode Rocks!'", function() {
+    let result = launchcode.launchOutput(30);
+    expect(result).toBe('LaunchCode Rocks!');
+  })
+
+  test("When passed a number that is NOT divisible by 2, 3, or 5, return 'Rutabagas! That doesn't work.", function() {
     let result = launchcode.launchOutput(11);
     expect(result).toBe("Rutabagas! That doesn't work.");
   })
