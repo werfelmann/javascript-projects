@@ -5,4 +5,6 @@ function hello(name) {
    return "Hello, " + name + "!";
 }
 
+console.log(hello('David'));
+
 module.exports = hello;
