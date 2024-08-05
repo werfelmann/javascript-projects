@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Use addEventListener</title>
+</head>
+<body>
+    <p id="main-text" class="orange" style="font-weight: bold;">
+    a bunch of really valuable text...
+    </p>
+    <button id="ring-button">Ring Bell</button>
+    <button id="greet-friends">Greet Friends</button>
+    <script>
+    function youRang() {
+        document.getElementById("main-text").innerHTML += "you rang...";
+        console.log("you rang...");
+    }
+    function greetFriends() {
+        document.getElementById("main-text").innerHTML += "hello, friend...";
+        console.log("hello, friend...");
+    }
+    // Obtain a reference to the button element
+    let button = document.getElementById("ring-button");
+    // Set named function youRang as the click event handler
+    button.addEventListener("click", youRang);
+    let button2 = document.getElementById("greet-friends");
+    button2.addEventListener("click", greetFriends)
+    </script>
+</body>
+</html>
