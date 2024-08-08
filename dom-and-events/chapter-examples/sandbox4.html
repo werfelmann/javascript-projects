@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Example</title>
+    <style>
+        .highlight { background-color: yellow; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <p>Hello, <span>world</span>!</p>
+        <!-- This is a comment -->
+    </div>
+
+    <script>
+        // window object
+        console.log(window.innerWidth); // Outputs the inner width of the window
+
+        // document object
+        console.log(document.title); // Outputs the title of the document
+
+        // element object
+        const container = document.getElementById('container');
+        container.classList.add('highlight'); // Adds a CSS class to the element
+
+        // node object
+        const firstChild = container.firstChild; // Gets the first child node
+        console.log(firstChild.nodeName); // Outputs the node name
+
+        // text node
+        const textNode = document.createTextNode('This is a new text node.');
+        container.appendChild(textNode); // Appends the text node to the container
+
+        // comment node
+        const commentNode = container.childNodes[1]; // Accesses the comment node
+        console.log(commentNode.nodeType); // Outputs the node type (8 for comments)
+
+        // document fragment
+        const fragment = document.createDocumentFragment();
+        const newElement = document.createElement('div');
+        newElement.textContent = 'Fragment content';
+        fragment.appendChild(newElement);
+        container.appendChild(fragment); // Appends the fragment content to the container
+
+        // event object
+        container.addEventListener('click', function(event) {
+            console.log('Container clicked', event);
+        });
+
+        // HTMLCollection and NodeList
+        const paragraphs = document.getElementsByTagName('p'); // HTMLCollection
+        const spans = document.querySelectorAll('span'); // NodeList
+        console.log(paragraphs.length); // Outputs the number of <p> elements
+        console.log(spans.length); // Outputs the number of <span> elements
+
+        // CSSStyleDeclaration
+        container.style.backgroundColor = 'lightblue'; // Changes the background color
+
+        // Attribute
+        const attr = container.getAttribute('id'); // Gets the value of the 'id' attribute
+        console.log(attr); // Outputs 'container'
+    </script>
+</body>
+</html>
