@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+</head>
+<body>
+    <div id="interactiveElements">
+        <button id="button1">Click Me!</button>
+        <button id="button2">Click Me Too!</button>
+        <form>
+            <label>Text field:<input id="text" type="text"></label>
+            <button id="submit">Submit</button>
+        </form>
+        <label>Checkboxes<input type="checkbox" name="box1"><input type="checkbox" name="box2"></label>
+        <a href="#" id="link">Clickable Link</a>
+    </div>
+    <div id="console">
+
+    </div>
+    <script>
+        const button1 = document.getElementById("button1");
+        button1.addEventListener("click", function(event) {
+            window.console.log("button 1 was clicked");
+        });
+        const button2 = document.getElementById("button2");
+        button2.addEventListener("mouseover", function(event) {
+            window.console.log("mouse is over button 2!");
+        });
+        button2.addEventListener("click", function(event) {
+            window.console.log("button 2 was clicked");
+        });
+
+        const textInput = document.getElementById("text");
+        const submit = document.getElementById("submit");
+        submit.addEventListener("click", function(event) {
+            window.console.log("Text input changed: " + textInput.value);
+        });
+    </script>
+</body>
+</html>
