@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSPractice</title>
+</head>
+<body style="background-color: midnightblue; color: gold;">
+    <h1>String Methods</h1>
+    <ol style="font-family: 'Courier New', Courier, monospace;">
+        <li>.length<br>returns the length of the string</li><br>
+        <li>.charAt()<br>returns the character at the given index</li><br>
+        <li>.charCodeAt()<br>returns the UTF code of the character at a given index</li><br>
+        <li>.at()<br>new as of 2022 to improve .charAt(). Returns the character at the given index, but will also accept negative numbers, which represent indexes counted from the end</li><br>
+        <li>[]<br>returns the character at the given index, but doesn't work to change anything about the string</li><br>
+        <li>.slice()<br>extract a portion of the string and store it in a new variable. Negative numbers count from end. 
+            <ul><li>Arg 1: starting index;</li> <li>Arg 2 (optional): end position (not inclusive)</li></ul></li><br>
+        <li style="color: gray;">.substring()<br>Similar to slice(), but interprets negative numbers as 0. Probably don't use it.</li><br>
+        <li style="color: gray;">.substr()<br>Deprecated--don't use it. Similar to slice(), but the second parameter specifies length of the extrated part.</li><br>
+        <li>.toUpperCase()<br>Makes the string into UPPERCASE letters.</li><br>
+        <li>.toLowerCase()<br>Makes the string into lowercase letters.</li><br>
+        <li>.concat()</li>
+        <li>.trim()</li>
+        <li>.trimStart()</li>
+        <li>.trimEnd()</li>
+        <li>.padStart()</li>
+        <li>.padEnd()</li>
+        <li>.repeat()</li>
+        <li>.replace()</li>
+        <li>.replaceAll()</li>
+        <li>.split()</li>
+    </ol>
+    <script src="jsPractice.js"></script>
+</body>
+</html>
